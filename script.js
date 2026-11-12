@@ -1,5 +1,3 @@
-const { forwardRef } = require("react");
-
 // 1
 const idadeUsuario = +prompt('Digite sua idade:');
 
@@ -7,7 +5,7 @@ if (idadeUsuario >= 18)
 {
     console.log('Acesso liberado! Divirta-se.');
 }
-if (idadeUsuario <= 18)
+if (idadeUsuario < 18)
 {
     console.log('Acesso negado. Você é menor de idade.');
 }
@@ -17,7 +15,7 @@ console.log('==============================================');
 
 
 // 2
-const senhaCorreta = front123;
+const senhaCorreta = 'front123';
 const senhaDigitada = prompt('Digite a senha de acesso:');
 
 if (senhaDigitada === senhaDigitada)
@@ -74,7 +72,7 @@ const notaAvaliacao = +prompt('De 0 a 10, digite qual foi sua nota:');
 
 if (totalVendas > 5000 && notaAvaliacao >= 8)
 {
-    salarioBase *= salarioBase * 0.15;
+    salarioBase += salarioBase * 0.15;
 }
 
 console.log(`Você vai receber ${salarioBase} reais pelo seu desempenho.`);
